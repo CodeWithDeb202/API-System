@@ -1,0 +1,18 @@
+# Environment variables
+.env
+
+# Python Virtual Environment
+venv/
+.venv/
+env/
+__pycache__/
+
+# Client Data and Scratch files
+clients/
+scratch/
+
+# Log files
+*.log
+
+# CSV or Database files containing real scraped data
+recruiters.csv
