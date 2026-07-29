@@ -16,3 +16,5 @@ scratch/
 
 # CSV or Database files containing real scraped data
 recruiters.csv
+
+session.json
