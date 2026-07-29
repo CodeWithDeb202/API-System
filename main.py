@@ -1,4 +1,5 @@
 import sys
+from linkedin_login import login_and_save_session
 
 
 def show_menu():
@@ -15,7 +16,7 @@ def main():
         enter_num = input("Enter option (1-5): ").strip()
 
         if enter_num == "1":
-            print("Helo 1")
+            login_and_save_session()
         elif enter_num == "2":
             print("Hii 2")
         elif enter_num == "3":
