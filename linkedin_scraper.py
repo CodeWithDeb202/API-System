@@ -35,10 +35,11 @@ def scrape_linkedin_posts(role_keyword='Java Developer'):
             headless=False,
             args=["--disable-blink-features=AutomationControlled"]
         )
-        context = browser.new_page(
+        context = browser.new_context(
             storage_state=Session_file,
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
         )
+        
         page = context.new_page()
 
         print(f"Searching LinkedIn for: {role_keyword}...")
