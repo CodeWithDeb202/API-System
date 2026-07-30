@@ -1,27 +1,30 @@
-# LinkedIn & Gmail Automation System
+# 🚀 LinkedIn & Gmail Automation System
 
-An automated recruitment and job application system designed to log into LinkedIn, scrape recent job posts for specific keywords and recruiter emails, and automatically dispatch personalized cold emails with candidate resumes via Gmail.
+An automated recruitment and job application pipeline designed to streamline the outreach process. It logs into LinkedIn, scrapes recent job postings for target roles and recruiter emails, dynamically tailors resumes, and automatically dispatches personalized cold emails via Gmail.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-* **Automated LinkedIn Login**: Securely handles session management and browser automation.
-* **Smart Job Scraping**: Searches for recent job posts (within the last 24 hours) based on custom keywords (e.g., "JAVA DEVELOPER", "CONTRACT") and extracts recruiter email addresses.
-* **Automated Gmail Dispatch**: Composes and sends professional emails with candidate resumes and submission details attached to the extracted recruiter emails.
-* **IMAP Reply Detection**: Monitors your inbox for recruiter responses using the IMAP protocol.
+* **Automated LinkedIn Session Management**: Securely handles browser automation and keeps your login session active.
+* **Smart Job & Contact Scraping**: Searches for recent job posts (within the past 24 hours) based on custom keywords and extracts recruiter email addresses.
+* **AI-Powered Resume Customization**: Dynamically tailors your base resume to align with specific job descriptions using advanced AI.
+* **Automated Gmail Outreach**: Composes and sends professional, personalized emails with your tailored resume attached directly to the extracted recruiter emails.
+* **IMAP Inbox Monitoring**: Monitors your Gmail inbox for recruiter replies and responses using the IMAP protocol.
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-├── clients/              # Resumes and templates for registered client candidates
-├── scratch/              # Target directory for temporary document conversions and customized resumes
+├── clients/              # Master base resumes and candidate configuration templates
+├── scratch/              # Temporary folder for generated files and tailored resumes
 ├── .env                  # Environment variables (Credentials & API keys)
-├── .gitignore            # Files and folders to ignore in Git
-├── main.py               # Main control script (Menu-driven)
-├── linkedin_login.py     # Automated LinkedIn login script
-├── linkedin_scraper.py   # Job and recruiter email scraper
+├── .gitignore            # Files and directories ignored by Git
+├── main.py               # Main control script (Interactive menu-driven pipeline)
+├── linkedin_login.py     # Automated LinkedIn login and session handler
+├── linkedin_scraper.py   # Job post and recruiter email scraper
+├── resume_customizer.py  # AI-based resume tailoring module
 ├── gmail_sender.py       # Automated email dispatch script
-└── requirements.txt      # Required Python packages
+├── imap_reply_detector.py# Inbox reply monitoring module
+└── requirements.txt      # Required Python dependencies
